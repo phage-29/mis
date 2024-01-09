@@ -1,3 +1,6 @@
+<?php
+$page = "Login";
+?>
 <!-- ======= Header ======= -->
 <?php require_once "assets/components/templates/header.php" ?>
 
@@ -26,7 +29,7 @@
                   <p class="text-center small">Enter your username & password to login</p>
                 </div>
 
-                <form class="row g-3">
+                <form class="row g-3 ajax-form">
 
                   <div class="col-12">
                     <label for="Username" class="form-label">Username</label>

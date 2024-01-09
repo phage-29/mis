@@ -1,3 +1,6 @@
+<?php
+$page = "Dashboard";
+?>
 <!-- ======= Header ======= -->
 <?php require_once "assets/components/templates/header.php" ?>
 
@@ -11,17 +14,8 @@
 <main id="main" class="main">
 
   <div class="pagetitle">
-    <h1>ApexCharts</h1>
-    <nav>
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item">Charts</li>
-        <li class="breadcrumb-item active">ApexCharts</li>
-      </ol>
-    </nav>
+    <h1><?= $page ?></h1>
   </div><!-- End Page Title -->
-
-  <p>ApexCharts Examples. You can check the <a href="https://apexcharts.com/javascript-chart-demos/" target="_blank">official website</a> for more examples.</p>
 
   <section class="section">
     <div class="row">

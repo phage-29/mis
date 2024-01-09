@@ -16,6 +16,20 @@
             </a>
         </li>
 
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="helpdesks">
+                <i class="bi bi-grid"></i>
+                <span>Helpdesks</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="meetings">
+                <i class="bi bi-grid"></i>
+                <span>Meetings</span>
+            </a>
+        </li>
+
     </ul>
 
 </aside><!-- End Sidebar-->

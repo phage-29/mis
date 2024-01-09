@@ -1,3 +1,6 @@
+<?php
+$page = "Register";
+?>
 <!-- ======= Header ======= -->
 <?php require_once "assets/components/templates/header.php" ?>
 
