@@ -2,8 +2,15 @@
 
 // Database credentials
 $hostname = "localhost";
-$username = "root";
-$password = "Password@123!";
+
+// Local user
+// $username = "root";
+// $password = "Password@123!";
+
+// Production user
+$username = "zoomrequestadmin";
+$password = "!r7TG4WuxCRJUgoo";
+
 $database = "misdb";
 
 try {
