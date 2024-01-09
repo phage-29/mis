@@ -29,7 +29,7 @@ if (isset($_POST['Login'])) {
 
                 $response['status'] = 'success';
                 $response['message'] = 'Login successful!';
-                $response['redirect'] = 'dashboard';
+                $response['redirect'] = 'dashboard.php';
             } else {
 
                 $response['status'] = 'error';
@@ -49,13 +49,13 @@ if (isset($_POST['Login'])) {
 if (isset($_POST['UpdateProfile'])) {
     $response['status'] = 'success';
     $response['message'] = 'Profile Update successful!';
-    $response['redirect'] = 'profile';
+    $response['redirect'] = 'profile.php';
 }
 
 if (isset($_POST['ChangePassword'])) {
     $response['status'] = 'success';
     $response['message'] = 'Password Change successful!';
-    $response['redirect'] = 'profile';
+    $response['redirect'] = 'profile.php';
 }
 
 if (isset($_POST['EmployeeRequest'])) {
@@ -108,7 +108,7 @@ if (isset($_POST['EmployeeRequest'])) {
 
         $response['status'] = 'success';
         $response['message'] = 'Request Submit successful!';
-        $response['redirect'] = 'helpdesks';
+        $response['redirect'] = 'helpdesks.php';
     } catch (Exception $e) {
         $response['status'] = 'error';
         $response['message'] = $e->getMessage();

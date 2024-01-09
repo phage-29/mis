@@ -3,28 +3,28 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="dashboard">
+            <a class="nav-link collapsed" href="dashboard.php">
                 <i class="bi bi-speedometer2"></i>
                 <span>Dashboard</span>
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="profile">
+            <a class="nav-link collapsed" href="profile.php">
                 <i class="bi bi-person"></i>
                 <span>Profile</span>
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="helpdesks">
+            <a class="nav-link collapsed" href="helpdesks.php">
                 <i class="bi bi-grid"></i>
                 <span>Helpdesks</span>
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="meetings">
+            <a class="nav-link collapsed" href="meetings.php">
                 <i class="bi bi-grid"></i>
                 <span>Meetings</span>
             </a>

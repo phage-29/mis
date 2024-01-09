@@ -3,7 +3,7 @@ require_once 'assets/components/includes/conn.php';
 
 session_start();
 
-$public = ['login', 'register'];
+$public = ['login.php', 'register.php'];
 $cur_page = basename($_SERVER['REQUEST_URI']);
 if (!in_array($cur_page, $public)) {
     if (isset($_SESSION['id']) && !empty($_SESSION['id'])) {

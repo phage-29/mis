@@ -16,7 +16,7 @@ $page = "Login";
             <div class="d-flex justify-content-center py-4">
               <span class="logo d-flex align-items-center w-auto">
                 <img src="assets/img/logo.png" alt="">
-                <span class="d-block">NiceAdmin</span>
+                <span class="d-block"><?= $website ?></span>
               </span>
             </div><!-- End Logo -->
 
@@ -58,7 +58,7 @@ $page = "Login";
                     <button class="btn btn-primary w-100" type="submit">Login</button>
                   </div>
                   <div class="col-12">
-                    <p class="small mb-0">Don't have account? <a href="pages-register.html">Create an account</a></p>
+                    <p class="small mb-0">Don't have account? <a href="register.php">Create an account</a></p>
                   </div>
                 </form>
 

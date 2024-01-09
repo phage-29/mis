@@ -3,7 +3,7 @@
 // Database credentials
 $hostname = "localhost";
 $username = "root";
-$password = "DTIRegion6!+";
+$password = "Password@123!";
 $database = "misdb";
 
 try {
