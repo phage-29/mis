@@ -22,11 +22,12 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
   <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
 
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery.min.js"></script>
+  <script src="assets/vendor/fullcalendar/dist/index.global.js"></script>
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet" />
-
-  <script src="assets/vendor/jquery.min.js"></script>
-
 </head>
 
 <body>

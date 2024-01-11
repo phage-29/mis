@@ -25,11 +25,18 @@ if (isset($_POST['Login'])) {
 
             if (password_verify($Password, $row->Password)) {
 
-                $_SESSION['id'] = $row->id;
+                if ($row->Activation == 1) {
 
-                $response['status'] = 'success';
-                $response['message'] = 'Login successful!';
-                $response['redirect'] = 'dashboard.php';
+                    $_SESSION['id'] = $row->id;
+
+                    $response['status'] = 'success';
+                    $response['message'] = 'Login successful!';
+                    $response['redirect'] = 'dashboard.php';
+                } else {
+
+                    $response['status'] = 'error';
+                    $response['message'] = 'Account not Activated!';
+                }
             } else {
 
                 $response['status'] = 'error';
@@ -58,7 +65,7 @@ if (isset($_POST['ChangePassword'])) {
     $response['redirect'] = 'profile.php';
 }
 
-if (isset($_POST['EmployeeRequest'])) {
+if (isset($_POST['EmployeeICTRequest'])) {
 
     $RequestTypeID = $conn->real_escape_string($_POST['RequestTypeID']);
     $CategoryID = $conn->real_escape_string($_POST['CategoryID']);

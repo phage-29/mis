@@ -92,5 +92,8 @@ $page = "Register";
   </div>
 </main><!-- End #main -->
 
+<!-- ======= Modal ======= -->
+<?php require_once "assets/components/templates/modals.php" ?>
+
 <!-- ======= Footer ======= -->
 <?php require_once "assets/components/templates/footer.php" ?>

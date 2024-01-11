@@ -1,6 +1,7 @@
 <?php
 // Database Connection
 include '../conn.php';
+session_start();
 $dsn = "mysql:host=$hostname;dbname=$database;charset=UTF8";
 $conn = new PDO($dsn, $username, $password, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
 
@@ -39,19 +40,19 @@ if ($searchValue != '') {
 }
 
 // Total number of records without filtering
-$stmt = $conn->prepare("SELECT COUNT(*) AS allcount FROM " . $join . " ");
+$stmt = $conn->prepare("SELECT COUNT(*) AS allcount FROM " . $join . " WHERE RequestedBy=" . $_SESSION['id'] . " ");
 $stmt->execute();
 $records = $stmt->fetch();
 $totalRecords = $records['allcount'];
 
 // Total number of records with filtering
-$stmt = $conn->prepare("SELECT COUNT(*) AS allcount FROM " . $join . " WHERE 1 " . $searchQuery);
+$stmt = $conn->prepare("SELECT COUNT(*) AS allcount FROM " . $join . " WHERE RequestedBy=" . $_SESSION['id'] . " " . $searchQuery);
 $stmt->execute($searchArray);
 $records = $stmt->fetch();
 $totalRecordwithFilter = $records['allcount'];
 
 // Fetch records
-$stmt = $conn->prepare("SELECT * FROM " . $join . " WHERE 1 " . $searchQuery . " ORDER BY " . $columnName . " " . $columnSortOrder . " LIMIT :limit,:offset");
+$stmt = $conn->prepare("SELECT * FROM " . $join . " WHERE RequestedBy=" . $_SESSION['id'] . " " . $searchQuery . " ORDER BY " . $columnName . " " . $columnSortOrder . " LIMIT :limit,:offset");
 
 // Bind values
 foreach ($searchArray as $key => $search) {
@@ -68,7 +69,7 @@ $data = array();
 foreach ($empRecords as $row) {
     $data[] = array(
         "DateRequested" => date_format(date_create($row['DateRequested']), 'd/m/Y'),
-        "RequestNo" => '<a href="' . $row['RequestNo'] . '">' . $row['RequestNo'] . '</a>',
+        "RequestNo" => '<a class="a-RequestNo link-primary font-monospace" href="#" data-bs-toggle="modal" data-bs-target="#helpdesk-modal" data-requestno="' . $row['RequestNo'] . '">' . $row['RequestNo'] . '</a>',
         "RequestType" => $row['RequestType'],
         "Category" => $row['Category'],
         "SubCategory" => $row['SubCategory'],
