@@ -5,7 +5,8 @@ $(document).ready(function () {
      * Datatables
      */
     $('#helpdesks-table').DataTable({
-        'scrollX': true,
+        'responsive': true,
+        // 'scrollX': true,
         'processing': true,
         'serverSide': true,
         'serverMethod': 'post',
@@ -25,7 +26,8 @@ $(document).ready(function () {
         ]
     });
     $('#all-helpdesks-table').DataTable({
-        'scrollX': true,
+        'responsive': true,
+        // 'scrollX': true,
         'processing': true,
         'serverSide': true,
         'serverMethod': 'post',

@@ -69,7 +69,7 @@ $data = array();
 foreach ($empRecords as $row) {
     $data[] = array(
         "DateRequested" => date_format(date_create($row['DateRequested']), 'd/m/Y'),
-        "RequestNo" => '<a class="a-RequestNo link-primary font-monospace" href="#" data-bs-toggle="modal" data-bs-target="#helpdesk-modal" data-requestno="' . $row['RequestNo'] . '">' . $row['RequestNo'] . '</a>',
+        "RequestNo" => '<a class="a-RequestNo link-primary font-monospace text-nowrap" href="#" data-bs-toggle="modal" data-bs-target="#helpdesk-modal" data-requestno="' . $row['RequestNo'] . '">' . $row['RequestNo'] . '</a>',
         "RequestType" => $row['RequestType'],
         "Category" => $row['Category'],
         "SubCategory" => $row['SubCategory'],

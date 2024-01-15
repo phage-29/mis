@@ -2,8 +2,22 @@
 
 // get connection
 require_once 'conn.php';
+require_once 'sendmail.php';
 
 session_start();
+
+$query = '
+        SELECT u.*, ct.*, d.*, r.*
+        FROM users u
+            LEFT JOIN clienttypes ct ON u.ClientTypeID = ct.id
+            LEFT JOIN divisions d ON u.DivisionID = d.id
+            LEFT JOIN roles r ON u.RoleID = r.id
+        WHERE
+            u.`id` = ?
+        ';
+$result = $conn->execute_query($query, [$_SESSION['id']]);
+
+$acc = $result->fetch_object();
 
 $response = array();
 
@@ -112,6 +126,39 @@ if (isset($_POST['EmployeeICTRequest'])) {
                 }
             }
         }
+        $Subject = "MSG-IT - " . $RequestNo;
+
+        $Message = "";
+        $Message .= "<p><img src='https://upload.wikimedia.org/wikipedia/commons/1/14/DTI_Logo_2019.png' alt='' width='58' height='55'></p>";
+        $Message .= "<hr>";
+        $Message .= "<div>";
+        $Message .= "<div>Dear " . $acc->FirstName . " " . $acc->LastName . ",</div>";
+        $Message .= "<br>";
+        $Message .= "<div>I hope this email finds you well. We acknowledge and appreciate your report related to IT/ICT Issue.</div>";
+        $Message .= "<br>";
+        $Message .= "<br>";
+        $Message .= "<div>Here are the details of your ticket:</div>";
+        $Message .= "<br>";
+        $Message .= "<div>Ticket Number: " . $RequestNo . "</div>";
+        $Message .= "<div>Date Submitted: " . date_format(date_create($DateRequested), "d M, Y") . "</div>";
+        $Message .= "<div>Description of Issue: " . $Complaint . "</div>";
+        $Message .= "<br>";
+        $Message .= "<br>";
+        $Message .= "<div>Please be assured that we are committed to resolving this matter at the earliest. Our support team will reach out to you with updates.</div>";
+        $Message .= "<div>We appreciate your patience and understanding as we work to resolve this matter. Thank you.</div>";
+        $Message .= "<br>";
+        $Message .= "<br>";
+        $Message .= "<div>Best Regards,</div>";
+        $Message .= "<br>";
+        $Message .= "<div>MSG-IT Administrator</div>";
+        $Message .= "<div>IT Support Staff</div>";
+        $Message .= "<div>DTI Region VI</div>";
+        $Message .= "<br>";
+        $Message .= "<hr>";
+        $Message .= "<div>&copy; Copyright <strong>MSG-IT </strong>2024. All Rights Reserved</div>";
+        $Message .= "</div>";
+
+        sendEmail($acc->Email, $Subject, $Message);
 
         $response['status'] = 'success';
         $response['message'] = 'Request Submit successful!';
