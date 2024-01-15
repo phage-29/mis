@@ -126,35 +126,35 @@ $page = "Profile";
                       <div class="row mb-3">
                         <label for="IDNo" class="col-md-4 col-lg-3 col-form-label">ID Number</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="IDNo" type="text" class="form-control" id="IDNo" value="<?= $acc->IDNo ?>" required />
+                          <input name="IDNo" type="text" class="form-control" id="IDNo" value="<?= $acc->IDNo ?>" required / autocomplete="off" />
                         </div>
                       </div>
 
                       <div class="row mb-3">
                         <label for="FirstName" class="col-md-4 col-lg-3 col-form-label">First Name</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="FirstName" type="text" class="form-control" id="FirstName" value="<?= $acc->FirstName ?>" required />
+                          <input name="FirstName" type="text" class="form-control" id="FirstName" value="<?= $acc->FirstName ?>" required / autocomplete="off" />
                         </div>
                       </div>
 
                       <div class="row mb-3">
                         <label for="MiddleName" class="col-md-4 col-lg-3 col-form-label">Middle Name</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="MiddleName" type="text" class="form-control" id="MiddleName" value="<?= $acc->MiddleName ?>" required />
+                          <input name="MiddleName" type="text" class="form-control" id="MiddleName" value="<?= $acc->MiddleName ?>" required / autocomplete="off" />
                         </div>
                       </div>
 
                       <div class="row mb-3">
                         <label for="LastName" class="col-md-4 col-lg-3 col-form-label">Last Name</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="LastName" type="text" class="form-control" id="LastName" value="<?= $acc->LastName ?>" required />
+                          <input name="LastName" type="text" class="form-control" id="LastName" value="<?= $acc->LastName ?>" required / autocomplete="off" />
                         </div>
                       </div>
 
                       <div class="row mb-3">
                         <label for="Position" class="col-md-4 col-lg-3 col-form-label">Position</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="Position" type="text" class="form-control" id="Position" value="<?= $acc->Position ?>" required />
+                          <input name="Position" type="text" class="form-control" id="Position" value="<?= $acc->Position ?>" required / autocomplete="off" />
                         </div>
                       </div>
 
@@ -201,7 +201,7 @@ $page = "Profile";
                       <div class="row mb-3">
                         <label for="DateOfBirth" class="col-md-4 col-lg-3 col-form-label">Date Of Birth</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="DateOfBirth" type="date" class="form-control" id="DateOfBirth" value="<?= $acc->DateOfBirth ?>">
+                          <input name="DateOfBirth" type="date" class="form-control" id="DateOfBirth" value="<?= $acc->DateOfBirth ?>" autocomplete="off" />
                         </div>
                       </div>
 
@@ -234,21 +234,21 @@ $page = "Profile";
                       <div class="row mb-3">
                         <label for="Address" class="col-md-4 col-lg-3 col-form-label">Address</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="Address" type="text" class="form-control" id="Address" value="<?= $acc->Address ?>">
+                          <input name="Address" type="text" class="form-control" id="Address" value="<?= $acc->Address ?>" autocomplete="off" />
                         </div>
                       </div>
 
                       <div class="row mb-3">
                         <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Phone</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="Phone" type="text" class="form-control" id="Phone" value="<?= $acc->Phone ?>">
+                          <input name="Phone" type="text" class="form-control" id="Phone" value="<?= $acc->Phone ?>" autocomplete="off" />
                         </div>
                       </div>
 
                       <div class="row mb-3">
                         <label for="Email" class="col-md-4 col-lg-3 col-form-label">Email</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="Email" type="email" class="form-control" id="Email" value="<?= $acc->Email ?>">
+                          <input name="Email" type="email" class="form-control" id="Email" value="<?= $acc->Email ?>" autocomplete="off" />
                         </div>
                       </div>
 
@@ -411,35 +411,35 @@ $page = "Profile";
                       <div class="row mb-3">
                         <label for="IDNo" class="col-md-4 col-lg-3 col-form-label">ID Number</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="IDNo" type="text" class="form-control" id="IDNo" value="<?= $acc->IDNo ?>" required />
+                          <input name="IDNo" type="text" class="form-control" id="IDNo" value="<?= $acc->IDNo ?>" required / autocomplete="off" />
                         </div>
                       </div>
 
                       <div class="row mb-3">
                         <label for="FirstName" class="col-md-4 col-lg-3 col-form-label">First Name</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="FirstName" type="text" class="form-control" id="FirstName" value="<?= $acc->FirstName ?>" required />
+                          <input name="FirstName" type="text" class="form-control" id="FirstName" value="<?= $acc->FirstName ?>" required / autocomplete="off" />
                         </div>
                       </div>
 
                       <div class="row mb-3">
                         <label for="MiddleName" class="col-md-4 col-lg-3 col-form-label">Middle Name</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="MiddleName" type="text" class="form-control" id="MiddleName" value="<?= $acc->MiddleName ?>" required />
+                          <input name="MiddleName" type="text" class="form-control" id="MiddleName" value="<?= $acc->MiddleName ?>" required / autocomplete="off" />
                         </div>
                       </div>
 
                       <div class="row mb-3">
                         <label for="LastName" class="col-md-4 col-lg-3 col-form-label">Last Name</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="LastName" type="text" class="form-control" id="LastName" value="<?= $acc->LastName ?>" required />
+                          <input name="LastName" type="text" class="form-control" id="LastName" value="<?= $acc->LastName ?>" required / autocomplete="off" />
                         </div>
                       </div>
 
                       <div class="row mb-3">
                         <label for="Position" class="col-md-4 col-lg-3 col-form-label">Position</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="Position" type="text" class="form-control" id="Position" value="<?= $acc->Position ?>" required />
+                          <input name="Position" type="text" class="form-control" id="Position" value="<?= $acc->Position ?>" required / autocomplete="off" />
                         </div>
                       </div>
 
@@ -486,7 +486,7 @@ $page = "Profile";
                       <div class="row mb-3">
                         <label for="DateOfBirth" class="col-md-4 col-lg-3 col-form-label">Date Of Birth</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="DateOfBirth" type="date" class="form-control" id="DateOfBirth" value="<?= $acc->DateOfBirth ?>">
+                          <input name="DateOfBirth" type="date" class="form-control" id="DateOfBirth" value="<?= $acc->DateOfBirth ?>" autocomplete="off" />
                         </div>
                       </div>
 
@@ -519,21 +519,21 @@ $page = "Profile";
                       <div class="row mb-3">
                         <label for="Address" class="col-md-4 col-lg-3 col-form-label">Address</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="Address" type="text" class="form-control" id="Address" value="<?= $acc->Address ?>">
+                          <input name="Address" type="text" class="form-control" id="Address" value="<?= $acc->Address ?>" autocomplete="off" />
                         </div>
                       </div>
 
                       <div class="row mb-3">
                         <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Phone</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="Phone" type="text" class="form-control" id="Phone" value="<?= $acc->Phone ?>">
+                          <input name="Phone" type="text" class="form-control" id="Phone" value="<?= $acc->Phone ?>" autocomplete="off" />
                         </div>
                       </div>
 
                       <div class="row mb-3">
                         <label for="Email" class="col-md-4 col-lg-3 col-form-label">Email</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="Email" type="email" class="form-control" id="Email" value="<?= $acc->Email ?>">
+                          <input name="Email" type="email" class="form-control" id="Email" value="<?= $acc->Email ?>" autocomplete="off" />
                         </div>
                       </div>
 
@@ -696,35 +696,35 @@ $page = "Profile";
                       <div class="row mb-3">
                         <label for="IDNo" class="col-md-4 col-lg-3 col-form-label">ID Number</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="IDNo" type="text" class="form-control" id="IDNo" value="<?= $acc->IDNo ?>" required />
+                          <input name="IDNo" type="text" class="form-control" id="IDNo" value="<?= $acc->IDNo ?>" required / autocomplete="off" />
                         </div>
                       </div>
 
                       <div class="row mb-3">
                         <label for="FirstName" class="col-md-4 col-lg-3 col-form-label">First Name</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="FirstName" type="text" class="form-control" id="FirstName" value="<?= $acc->FirstName ?>" required />
+                          <input name="FirstName" type="text" class="form-control" id="FirstName" value="<?= $acc->FirstName ?>" required / autocomplete="off" />
                         </div>
                       </div>
 
                       <div class="row mb-3">
                         <label for="MiddleName" class="col-md-4 col-lg-3 col-form-label">Middle Name</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="MiddleName" type="text" class="form-control" id="MiddleName" value="<?= $acc->MiddleName ?>" required />
+                          <input name="MiddleName" type="text" class="form-control" id="MiddleName" value="<?= $acc->MiddleName ?>" required / autocomplete="off" />
                         </div>
                       </div>
 
                       <div class="row mb-3">
                         <label for="LastName" class="col-md-4 col-lg-3 col-form-label">Last Name</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="LastName" type="text" class="form-control" id="LastName" value="<?= $acc->LastName ?>" required />
+                          <input name="LastName" type="text" class="form-control" id="LastName" value="<?= $acc->LastName ?>" required / autocomplete="off" />
                         </div>
                       </div>
 
                       <div class="row mb-3">
                         <label for="Position" class="col-md-4 col-lg-3 col-form-label">Position</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="Position" type="text" class="form-control" id="Position" value="<?= $acc->Position ?>" required />
+                          <input name="Position" type="text" class="form-control" id="Position" value="<?= $acc->Position ?>" required / autocomplete="off" />
                         </div>
                       </div>
 
@@ -771,7 +771,7 @@ $page = "Profile";
                       <div class="row mb-3">
                         <label for="DateOfBirth" class="col-md-4 col-lg-3 col-form-label">Date Of Birth</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="DateOfBirth" type="date" class="form-control" id="DateOfBirth" value="<?= $acc->DateOfBirth ?>">
+                          <input name="DateOfBirth" type="date" class="form-control" id="DateOfBirth" value="<?= $acc->DateOfBirth ?>" autocomplete="off" />
                         </div>
                       </div>
 
@@ -804,21 +804,21 @@ $page = "Profile";
                       <div class="row mb-3">
                         <label for="Address" class="col-md-4 col-lg-3 col-form-label">Address</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="Address" type="text" class="form-control" id="Address" value="<?= $acc->Address ?>">
+                          <input name="Address" type="text" class="form-control" id="Address" value="<?= $acc->Address ?>" autocomplete="off" />
                         </div>
                       </div>
 
                       <div class="row mb-3">
                         <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Phone</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="Phone" type="text" class="form-control" id="Phone" value="<?= $acc->Phone ?>">
+                          <input name="Phone" type="text" class="form-control" id="Phone" value="<?= $acc->Phone ?>" autocomplete="off" />
                         </div>
                       </div>
 
                       <div class="row mb-3">
                         <label for="Email" class="col-md-4 col-lg-3 col-form-label">Email</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="Email" type="email" class="form-control" id="Email" value="<?= $acc->Email ?>">
+                          <input name="Email" type="email" class="form-control" id="Email" value="<?= $acc->Email ?>" autocomplete="off" />
                         </div>
                       </div>
 
@@ -981,35 +981,35 @@ $page = "Profile";
                       <div class="row mb-3">
                         <label for="IDNo" class="col-md-4 col-lg-3 col-form-label">ID Number</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="IDNo" type="text" class="form-control" id="IDNo" value="<?= $acc->IDNo ?>" required />
+                          <input name="IDNo" type="text" class="form-control" id="IDNo" value="<?= $acc->IDNo ?>" required / autocomplete="off" />
                         </div>
                       </div>
 
                       <div class="row mb-3">
                         <label for="FirstName" class="col-md-4 col-lg-3 col-form-label">First Name</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="FirstName" type="text" class="form-control" id="FirstName" value="<?= $acc->FirstName ?>" required />
+                          <input name="FirstName" type="text" class="form-control" id="FirstName" value="<?= $acc->FirstName ?>" required / autocomplete="off" />
                         </div>
                       </div>
 
                       <div class="row mb-3">
                         <label for="MiddleName" class="col-md-4 col-lg-3 col-form-label">Middle Name</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="MiddleName" type="text" class="form-control" id="MiddleName" value="<?= $acc->MiddleName ?>" required />
+                          <input name="MiddleName" type="text" class="form-control" id="MiddleName" value="<?= $acc->MiddleName ?>" required / autocomplete="off" />
                         </div>
                       </div>
 
                       <div class="row mb-3">
                         <label for="LastName" class="col-md-4 col-lg-3 col-form-label">Last Name</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="LastName" type="text" class="form-control" id="LastName" value="<?= $acc->LastName ?>" required />
+                          <input name="LastName" type="text" class="form-control" id="LastName" value="<?= $acc->LastName ?>" required / autocomplete="off" />
                         </div>
                       </div>
 
                       <div class="row mb-3">
                         <label for="Position" class="col-md-4 col-lg-3 col-form-label">Position</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="Position" type="text" class="form-control" id="Position" value="<?= $acc->Position ?>" required />
+                          <input name="Position" type="text" class="form-control" id="Position" value="<?= $acc->Position ?>" required / autocomplete="off" />
                         </div>
                       </div>
 
@@ -1056,7 +1056,7 @@ $page = "Profile";
                       <div class="row mb-3">
                         <label for="DateOfBirth" class="col-md-4 col-lg-3 col-form-label">Date Of Birth</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="DateOfBirth" type="date" class="form-control" id="DateOfBirth" value="<?= $acc->DateOfBirth ?>">
+                          <input name="DateOfBirth" type="date" class="form-control" id="DateOfBirth" value="<?= $acc->DateOfBirth ?>" autocomplete="off" />
                         </div>
                       </div>
 
@@ -1089,21 +1089,21 @@ $page = "Profile";
                       <div class="row mb-3">
                         <label for="Address" class="col-md-4 col-lg-3 col-form-label">Address</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="Address" type="text" class="form-control" id="Address" value="<?= $acc->Address ?>">
+                          <input name="Address" type="text" class="form-control" id="Address" value="<?= $acc->Address ?>" autocomplete="off" />
                         </div>
                       </div>
 
                       <div class="row mb-3">
                         <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Phone</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="Phone" type="text" class="form-control" id="Phone" value="<?= $acc->Phone ?>">
+                          <input name="Phone" type="text" class="form-control" id="Phone" value="<?= $acc->Phone ?>" autocomplete="off" />
                         </div>
                       </div>
 
                       <div class="row mb-3">
                         <label for="Email" class="col-md-4 col-lg-3 col-form-label">Email</label>
                         <div class="col-md-8 col-lg-9">
-                          <input name="Email" type="email" class="form-control" id="Email" value="<?= $acc->Email ?>">
+                          <input name="Email" type="email" class="form-control" id="Email" value="<?= $acc->Email ?>" autocomplete="off" />
                         </div>
                       </div>
 
